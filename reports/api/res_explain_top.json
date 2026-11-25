@@ -1,0 +1,32 @@
+[
+ {
+  "feature": "tenure",
+  "value": 5,
+  "effect": 0.2242,
+  "direction": "қауіпті арттырады"
+ },
+ {
+  "feature": "MonthlyCharges",
+  "value": 95.5,
+  "effect": 0.0784,
+  "direction": "қауіпті арттырады"
+ },
+ {
+  "feature": "TotalCharges",
+  "value": 470.0,
+  "effect": 0.0194,
+  "direction": "қауіпті арттырады"
+ },
+ {
+  "feature": "StreamingMovies",
+  "value": "Yes",
+  "effect": 0.0093,
+  "direction": "қауіпті арттырады"
+ },
+ {
+  "feature": "gender",
+  "value": "Female",
+  "effect": 0.002,
+  "direction": "қауіпті арттырады"
+ }
+]

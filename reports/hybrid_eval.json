@@ -1,0 +1,24 @@
+{
+  "counts": {
+    "LOW_RISK": 543,
+    "HIGH_RISK": 562,
+    "NO_ACTION": 121,
+    "REVIEW_REQUIRED": 180,
+    "NOT_ASSESSED": 3
+  },
+  "churn_rate_by_decision": {
+    "LOW_RISK": 0.0497,
+    "HIGH_RISK": 0.5267,
+    "NO_ACTION": 0.124,
+    "REVIEW_REQUIRED": 0.2,
+    "NOT_ASSESSED": 0.0
+  },
+  "source_counts": {
+    "model": 518,
+    "model+rules": 742,
+    "rules:HARD": 149
+  },
+  "cost_offer_HIGH_RISK_only": 28900.0,
+  "cost_offer_HIGH_RISK_and_REVIEW": 28900.0,
+  "n": 1409
+}

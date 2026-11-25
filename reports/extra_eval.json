@@ -1,0 +1,148 @@
+{
+  "noweight": {
+    "pr_auc": 0.6518,
+    "at_0.5": {
+      "threshold": 0.5,
+      "tp": 190,
+      "fp": 94,
+      "fn": 184,
+      "tn": 941,
+      "precision": 0.669,
+      "recall": 0.508,
+      "cost": 41500.0
+    },
+    "at_cost": {
+      "threshold": 0.22,
+      "tp": 315,
+      "fp": 333,
+      "fn": 59,
+      "tn": 702,
+      "precision": 0.4861,
+      "recall": 0.8422,
+      "cost": 28450.0
+    }
+  },
+  "groups": {
+    "gender=Female": {
+      "threshold": 0.41,
+      "tp": 163,
+      "fp": 162,
+      "fn": 30,
+      "tn": 332,
+      "precision": 0.5015,
+      "recall": 0.8446,
+      "cost": 14100.0,
+      "n": 687,
+      "base_rate": 0.2809,
+      "flag_rate": 0.4731
+    },
+    "gender=Male": {
+      "threshold": 0.41,
+      "tp": 157,
+      "fp": 185,
+      "fn": 24,
+      "tn": 356,
+      "precision": 0.4591,
+      "recall": 0.8674,
+      "cost": 14050.0,
+      "n": 722,
+      "base_rate": 0.2507,
+      "flag_rate": 0.4737
+    },
+    "SeniorCitizen=0": {
+      "threshold": 0.41,
+      "tp": 225,
+      "fp": 276,
+      "fn": 51,
+      "tn": 635,
+      "precision": 0.4491,
+      "recall": 0.8152,
+      "cost": 24000.0,
+      "n": 1187,
+      "base_rate": 0.2325,
+      "flag_rate": 0.4221
+    },
+    "SeniorCitizen=1": {
+      "threshold": 0.41,
+      "tp": 95,
+      "fp": 71,
+      "fn": 3,
+      "tn": 53,
+      "precision": 0.5723,
+      "recall": 0.9694,
+      "cost": 4150.0,
+      "n": 222,
+      "base_rate": 0.4414,
+      "flag_rate": 0.7477
+    }
+  },
+  "rule_coverage": {
+    "R1": {
+      "fired": 0,
+      "churned": 0
+    },
+    "R2": {
+      "fired": 0,
+      "churned": 0
+    },
+    "R3": {
+      "fired": 0,
+      "churned": 0
+    },
+    "R4": {
+      "fired": 0,
+      "churned": 0
+    },
+    "R5": {
+      "fired": 0,
+      "churned": 0
+    },
+    "R6": {
+      "fired": 3,
+      "churned": 0
+    },
+    "R7": {
+      "fired": 25,
+      "churned": 0
+    },
+    "R8": {
+      "fired": 121,
+      "churned": 15
+    },
+    "R9": {
+      "fired": 599,
+      "churned": 303
+    },
+    "R10": {
+      "fired": 458,
+      "churned": 234
+    },
+    "R11": {
+      "fired": 522,
+      "churned": 270
+    },
+    "R12": {
+      "fired": 361,
+      "churned": 192
+    },
+    "R13": {
+      "fired": 324,
+      "churned": 191
+    },
+    "R14": {
+      "fired": 76,
+      "churned": 19
+    },
+    "R15": {
+      "fired": 0,
+      "churned": 0
+    }
+  },
+  "latency_ms": {
+    "decide_mean": 8.35,
+    "decide_p95": 12.06,
+    "explain_mean": 106.55,
+    "n_decide": 1409,
+    "n_explain": 40
+  }
+}

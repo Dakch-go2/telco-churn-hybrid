@@ -1,0 +1,337 @@
+{
+ "health": {
+  "status": 200,
+  "json": {
+   "status": "ok",
+   "model_loaded": true,
+   "model": "Gradient Boosting",
+   "version": "1.0",
+   "threshold": 0.41,
+   "rules_count": 15
+  }
+ },
+ "predict_high": {
+  "status": 200,
+  "json": {
+   "decision": "HIGH_RISK",
+   "source": "model+rules",
+   "probability": 0.866,
+   "threshold": 0.41,
+   "fired_rules": [
+    {
+     "id": "R9",
+     "group": "POST",
+     "rule": "ЕГЕР қауіп жоғары ЖӘНЕ Contract = 'Month-to-month' ОНДА 1-2 жылдық келісімшартқа өтуге жеңілдік ұсыну",
+     "action": "Ұсыныс: 1 немесе 2 жылдық келісімшартқа өткенде 15% жеңілдік"
+    },
+    {
+     "id": "R10",
+     "group": "POST",
+     "rule": "ЕГЕР қауіп жоғары ЖӘНЕ InternetService = 'Fiber optic' ОНДА тарифті оңтайландыру немесе 2 ай жеңілдік ұсыну",
+     "action": "Ұсыныс: тиімдірек тариф ауыстыру немесе 2 ай жеңілдік"
+    },
+    {
+     "id": "R11",
+     "group": "POST",
+     "rule": "ЕГЕР қауіп жоғары ЖӘНЕ TechSupport = 'No' (интернеті бар) ОНДА тегін техқолдау қызметін 3 айға ұсыну",
+     "action": "Ұсыныс: тегін техқолдау 3 ай"
+    },
+    {
+     "id": "R12",
+     "group": "POST",
+     "rule": "ЕГЕР қауіп жоғары ЖӘНЕ PaymentMethod = 'Electronic check' ОНДА автотөлемге өтуге бонус ұсыну",
+     "action": "Ұсыныс: автотөлемге өткенде $5 бонус"
+    },
+    {
+     "id": "R13",
+     "group": "POST",
+     "rule": "ЕГЕР қауіп жоғары ЖӘНЕ tenure < 12 ОНДА жаңа абонентке 'қош келдіңіз' байланыс бағдарламасы",
+     "action": "Ұсыныс: менеджердің жеке қоңырауы және алғашқы жылдың бонус пакеті"
+    }
+   ],
+   "recommendations": [
+    "Ұсыныс: 1 немесе 2 жылдық келісімшартқа өткенде 15% жеңілдік",
+    "Ұсыныс: тиімдірек тариф ауыстыру немесе 2 ай жеңілдік",
+    "Ұсыныс: тегін техқолдау 3 ай",
+    "Ұсыныс: автотөлемге өткенде $5 бонус",
+    "Ұсыныс: менеджердің жеке қоңырауы және алғашқы жылдың бонус пакеті"
+   ],
+   "message": "Кету қаупі жоғары (p=0.87). Ұстап қалу шарасы ұсынылады.",
+   "decision_id": 1
+  }
+ },
+ "explain_high": {
+  "status": 200,
+  "json": {
+   "decision": "HIGH_RISK",
+   "source": "model+rules",
+   "probability": 0.866,
+   "threshold": 0.41,
+   "fired_rules": [
+    {
+     "id": "R9",
+     "group": "POST",
+     "rule": "ЕГЕР қауіп жоғары ЖӘНЕ Contract = 'Month-to-month' ОНДА 1-2 жылдық келісімшартқа өтуге жеңілдік ұсыну",
+     "action": "Ұсыныс: 1 немесе 2 жылдық келісімшартқа өткенде 15% жеңілдік"
+    },
+    {
+     "id": "R10",
+     "group": "POST",
+     "rule": "ЕГЕР қауіп жоғары ЖӘНЕ InternetService = 'Fiber optic' ОНДА тарифті оңтайландыру немесе 2 ай жеңілдік ұсыну",
+     "action": "Ұсыныс: тиімдірек тариф ауыстыру немесе 2 ай жеңілдік"
+    },
+    {
+     "id": "R11",
+     "group": "POST",
+     "rule": "ЕГЕР қауіп жоғары ЖӘНЕ TechSupport = 'No' (интернеті бар) ОНДА тегін техқолдау қызметін 3 айға ұсыну",
+     "action": "Ұсыныс: тегін техқолдау 3 ай"
+    },
+    {
+     "id": "R12",
+     "group": "POST",
+     "rule": "ЕГЕР қауіп жоғары ЖӘНЕ PaymentMethod = 'Electronic check' ОНДА автотөлемге өтуге бонус ұсыну",
+     "action": "Ұсыныс: автотөлемге өткенде $5 бонус"
+    },
+    {
+     "id": "R13",
+     "group": "POST",
+     "rule": "ЕГЕР қауіп жоғары ЖӘНЕ tenure < 12 ОНДА жаңа абонентке 'қош келдіңіз' байланыс бағдарламасы",
+     "action": "Ұсыныс: менеджердің жеке қоңырауы және алғашқы жылдың бонус пакеті"
+    }
+   ],
+   "recommendations": [
+    "Ұсыныс: 1 немесе 2 жылдық келісімшартқа өткенде 15% жеңілдік",
+    "Ұсыныс: тиімдірек тариф ауыстыру немесе 2 ай жеңілдік",
+    "Ұсыныс: тегін техқолдау 3 ай",
+    "Ұсыныс: автотөлемге өткенде $5 бонус",
+    "Ұсыныс: менеджердің жеке қоңырауы және алғашқы жылдың бонус пакеті"
+   ],
+   "message": "Кету қаупі жоғары (p=0.87). Ұстап қалу шарасы ұсынылады.",
+   "decision_id": 2,
+   "top_features": [
+    {
+     "feature": "tenure",
+     "value": 5,
+     "effect": 0.2242,
+     "direction": "қауіпті арттырады"
+    },
+    {
+     "feature": "MonthlyCharges",
+     "value": 95.5,
+     "effect": 0.0784,
+     "direction": "қауіпті арттырады"
+    },
+    {
+     "feature": "TotalCharges",
+     "value": 470.0,
+     "effect": 0.0194,
+     "direction": "қауіпті арттырады"
+    },
+    {
+     "feature": "StreamingMovies",
+     "value": "Yes",
+     "effect": 0.0093,
+     "direction": "қауіпті арттырады"
+    },
+    {
+     "feature": "gender",
+     "value": "Female",
+     "effect": 0.002,
+     "direction": "қауіпті арттырады"
+    }
+   ]
+  }
+ },
+ "predict_border": {
+  "status": 200,
+  "json": {
+   "decision": "REVIEW_REQUIRED",
+   "source": "model+rules",
+   "probability": 0.4097,
+   "threshold": 0.41,
+   "fired_rules": [],
+   "recommendations": [],
+   "message": "Модель сенімсіз (p=0.41, шек=0.41): маманның тексеруі қажет.",
+   "decision_id": 3
+  }
+ },
+ "predict_invalid": {
+  "status": 422,
+  "json": {
+   "detail": {
+    "error": "INVALID_INPUT",
+    "message": "Кіріс деректерінде қайшылық бар: Мүмкін емес абоненттік мерзімді ұстау; Мүмкін емес айлық төлемді ұстау; Төлемдер арасындағы қайшылықты ұстау",
+    "rules": [
+     {
+      "id": "R1",
+      "group": "VALID",
+      "rule": "ЕГЕР tenure < 0 НЕМЕСЕ tenure > 120 ОНДА деректер қате",
+      "action": "INVALID"
+     },
+     {
+      "id": "R2",
+      "group": "VALID",
+      "rule": "ЕГЕР MonthlyCharges <= 0 НЕМЕСЕ MonthlyCharges > 500 ОНДА деректер қате",
+      "action": "INVALID"
+     },
+     {
+      "id": "R3",
+      "group": "VALID",
+      "rule": "ЕГЕР TotalCharges < 0 НЕМЕСЕ TotalCharges > MonthlyCharges * (tenure + 1) * 1.5 ОНДА деректер қате",
+      "action": "INVALID"
+     }
+    ],
+    "decision_id": 4
+   }
+  }
+ },
+ "predict_missing": {
+  "status": 422,
+  "json": {
+   "error": "INVALID_INPUT",
+   "message": "Кіріс деректері қате: өрістердің түрін немесе мәнін тексеріңіз.",
+   "details": [
+    {
+     "field": "Contract",
+     "problem": "Field required",
+     "type": "missing"
+    },
+    {
+     "field": "MonthlyCharges",
+     "problem": "Input should be a valid number, unable to parse string as a number",
+     "type": "float_parsing"
+    }
+   ]
+  }
+ },
+ "predict_loyal": {
+  "status": 200,
+  "json": {
+   "decision": "LOW_RISK",
+   "source": "model",
+   "probability": 0.0532,
+   "threshold": 0.41,
+   "fired_rules": [],
+   "recommendations": [],
+   "message": "Кету қаупі төмен (p=0.05).",
+   "decision_id": 5
+  }
+ },
+ "predict_new": {
+  "status": 200,
+  "json": {
+   "decision": "NOT_ASSESSED",
+   "source": "rules:HARD",
+   "probability": null,
+   "threshold": 0.41,
+   "fired_rules": [
+    {
+     "id": "R6",
+     "group": "HARD",
+     "rule": "ЕГЕР абонент жаңа (tenure = 0) ОНДА модельсіз 'жаңа абонент, бағалау мүмкін емес' шешімі",
+     "action": "NEW_CUSTOMER"
+    }
+   ],
+   "recommendations": [],
+   "message": "Жаңа абонент: тарихы жоқ, бағалау сенімсіз. Алғашқы айдан кейін қайталаңыз.",
+   "decision_id": 6
+  }
+ },
+ "stats": {
+  "status": 200,
+  "json": {
+   "last_n": 6,
+   "by_decision": {
+    "NOT_ASSESSED": 1,
+    "LOW_RISK": 1,
+    "INVALID_INPUT": 1,
+    "REVIEW_REQUIRED": 1,
+    "HIGH_RISK": 2
+   },
+   "mean_probability": 0.5487
+  }
+ },
+ "req": {
+  "gender": "Female",
+  "SeniorCitizen": 0,
+  "Partner": "No",
+  "Dependents": "No",
+  "tenure": 5,
+  "PhoneService": "Yes",
+  "MultipleLines": "No",
+  "InternetService": "Fiber optic",
+  "OnlineSecurity": "No",
+  "OnlineBackup": "No",
+  "DeviceProtection": "No",
+  "TechSupport": "No",
+  "StreamingTV": "Yes",
+  "StreamingMovies": "Yes",
+  "Contract": "Month-to-month",
+  "PaperlessBilling": "Yes",
+  "PaymentMethod": "Electronic check",
+  "MonthlyCharges": 95.5,
+  "TotalCharges": 470.0
+ },
+ "border": {
+  "gender": "Female",
+  "SeniorCitizen": 0,
+  "Partner": "No",
+  "Dependents": "No",
+  "tenure": 37,
+  "PhoneService": "Yes",
+  "MultipleLines": "No",
+  "InternetService": "DSL",
+  "OnlineSecurity": "No",
+  "OnlineBackup": "No",
+  "DeviceProtection": "No",
+  "TechSupport": "No",
+  "StreamingTV": "No",
+  "StreamingMovies": "No",
+  "Contract": "Month-to-month",
+  "PaperlessBilling": "Yes",
+  "PaymentMethod": "Electronic check",
+  "MonthlyCharges": 70.0,
+  "TotalCharges": 2590.0
+ },
+ "invalid": {
+  "gender": "Female",
+  "SeniorCitizen": 0,
+  "Partner": "No",
+  "Dependents": "No",
+  "tenure": -5,
+  "PhoneService": "Yes",
+  "MultipleLines": "No",
+  "InternetService": "Fiber optic",
+  "OnlineSecurity": "No",
+  "OnlineBackup": "No",
+  "DeviceProtection": "No",
+  "TechSupport": "No",
+  "StreamingTV": "Yes",
+  "StreamingMovies": "Yes",
+  "Contract": "Month-to-month",
+  "PaperlessBilling": "Yes",
+  "PaymentMethod": "Electronic check",
+  "MonthlyCharges": -20.0,
+  "TotalCharges": 470.0
+ },
+ "missing": {
+  "gender": "Female",
+  "SeniorCitizen": 0,
+  "Partner": "No",
+  "Dependents": "No",
+  "tenure": 5,
+  "PhoneService": "Yes",
+  "MultipleLines": "No",
+  "InternetService": "Fiber optic",
+  "OnlineSecurity": "No",
+  "OnlineBackup": "No",
+  "DeviceProtection": "No",
+  "TechSupport": "No",
+  "StreamingTV": "Yes",
+  "StreamingMovies": "Yes",
+  "PaperlessBilling": "Yes",
+  "PaymentMethod": "Electronic check",
+  "MonthlyCharges": "abc",
+  "TotalCharges": 470.0
+ }
+}

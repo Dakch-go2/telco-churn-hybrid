@@ -1,0 +1,32 @@
+{'model': 'Logistic Regression', 'best_params': {'C': 1}, 'cv_pr_auc': np.float64(0.66), 'test_pr_auc': 0.6326, 'test_roc_auc': 0.8413}
+{'model': 'Random Forest', 'best_params': {'max_depth': None, 'min_samples_leaf': 10, 'n_estimators': 400}, 'cv_pr_auc': np.float64(0.6611), 'test_pr_auc': 0.6504, 'test_roc_auc': 0.8435}
+{'model': 'Gradient Boosting', 'best_params': {'learning_rate': 0.03, 'max_depth': 5, 'max_iter': 100}, 'cv_pr_auc': np.float64(0.6688), 'test_pr_auc': 0.6567, 'test_roc_auc': 0.8439}
+{
+ "best": "Gradient Boosting",
+ "threshold_cost": 0.41,
+ "threshold_f1": 0.59,
+ "test_at_0.5": {
+  "threshold": 0.5,
+  "tn": 766,
+  "fp": 269,
+  "fn": 75,
+  "tp": 299,
+  "precision": 0.5264,
+  "recall": 0.7995,
+  "f1": 0.6348,
+  "cost": 28450.0
+ },
+ "test_at_cost_thr": {
+  "threshold": 0.41,
+  "tn": 688,
+  "fp": 347,
+  "fn": 54,
+  "tp": 320,
+  "precision": 0.4798,
+  "recall": 0.8556,
+  "f1": 0.6148,
+  "cost": 28150.0
+ },
+ "baseline_cost_no_action": 74800.0,
+ "baseline_cost_offer_all": 51750.0
+}
